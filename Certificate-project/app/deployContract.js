@@ -52,7 +52,7 @@ var deployContract = async function (args) {
                 if(receipt.status == '0x1'){ 
                     return JSON.stringify({ 'ContractAddress': contractAddress, 'TransactionHash': transactionHash} );
                  } else {
-                    return JSON.stringify({ 'ERROR': 'The ERROR occured while deploying Master contract!' });
+                    return JSON.stringify({ 'ERROR': 'The ERROR occured while deploying  contract!' });
                  }
             }
         }
