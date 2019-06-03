@@ -12,11 +12,11 @@ app.get('/', function(req, res){
 })
 
 app.post('/deploy',async function (req, res) {
-    console.log("---------------------------------Deploy POContract API Started--------------------------------",req.body)
+    console.log("---------------------------------Deploy Contract API Started--------------------------------",req.body)
     const result = await deploy.deployContract(req.body.arguments);
         console.log("Result:",result)     
         res.send(result)
-    console.log("---------------------------------Deploy POContract API END------------------------------------",result)
+    console.log("---------------------------------Deploy Contract API END------------------------------------",result)
 })
 
 app.post('/contractFunction', function (req, res) {
