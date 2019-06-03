@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json()); // support json encoded bodies
 
 app.get('/', function(req, res){
-    res.send("------------------------------------Welcome to Kalyan jewellers----------------------------------")
+    res.send("------------------------------------Welcome to Certificate management application----------------------------------")
 })
 
 app.post('/deploy',async function (req, res) {
